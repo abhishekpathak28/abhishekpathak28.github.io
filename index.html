@@ -4,22 +4,89 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abhishek Pathak | Unity Game Developer</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<section class="hero">
+<div class="parallax-bg"></div>
+
+<nav class="top-nav">
+  <a href="#home">Home</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
   <div class="hero-text">
     <h3>Unity Game Developer</h3>
     <h1>Hi, I'm <span>Abhishek</span></h1>
     <p>Building Mobile & PC Games with Unity & C#</p>
   </div>
-
   <div class="hero-image">
-    <img src="assets/img/profilepic.jpg" alt="Abhishek Pathak">
+    <img src="assets/img/profilepic.JPG" alt="Abhishek Pathak">
   </div>
 </section>
 
+<section class="portfolio-viewer" id="projects">
+  <div class="viewer-main">
+
+    <div class="viewer-video">
+      <div class="video-shimmer"></div>
+      <div class="nav-arrow left" onclick="prevProject()">❮</div>
+      <iframe id="projectVideo" allowfullscreen></iframe>
+      <div class="nav-arrow right" onclick="nextProject()">❯</div>
+    </div>
+
+    <div class="viewer-info">
+      <h2 id="projectTitle"></h2>
+      <div class="tags" id="projectTags"></div>
+      <p id="projectDesc"></p>
+      <ul id="projectBullets"></ul>
+    </div>
+
+  </div>
+
+  <div class="project-strip">
+    <img src="assets/img/cardash.png" alt="Cardash ">
+    <img src="assets/img/hyperrally.png" alt="Hyper Rally ">
+    <img src="assets/img/ludo.png" alt="Ludo game ">
+    <img src="assets/img/zombie.png" alt="Zombie ">
+    <div class="thumb-underline"></div>
+  </div>
+</section>
+
+<section class="skills" id="skills">
+  <h2>Technical Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">Unity Engine</div>
+    <div class="skill-card">C# Programming</div>
+    <div class="skill-card">Gameplay Systems</div>
+    <div class="skill-card">AI & State Machines</div>
+    <div class="skill-card">Cinemachine</div>
+    <div class="skill-card">Addressables</div>
+    <div class="skill-card">Mobile Optimization</div>
+    <div class="skill-card">UI / UX (UGUI)</div>
+    <div class="skill-card">Physics</div>
+    <div class="skill-card">Ads Integration</div>
+    <div class="skill-card">Multiplayer (Basics)</div>
+    <div class="skill-card">Unreal Engine (Basic)</div>
+  </div>
+</section>
+
+<section class="resume-contact" id="contact">
+  <h2>Resume</h2>
+  <a class="resume-btn" href="Abhishek_Pathak_Unity_Developer.pdf" target="_blank">
+    Download Resume (PDF)
+  </a>
+
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:abhisheksonu5867@gmail.com">abhisheksonu5867@gmail.com</a></p>
+  <p>GitHub: <a href="https://github.com/abhishekpathak28" target="_blank" rel="noopener">github.com/abhishekpathak28</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener">LinkedIn Profile</a></p>
+</section>
+
+<script src="assets/js/project.js"></script>
 </body>
 </html>
