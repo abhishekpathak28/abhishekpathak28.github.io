@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  background: #05050a;
+  color: #e5e7eb;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+  background: radial-gradient(circle at right, #0f172a, #020617);
+}
+
+.hero-text h3 {
+  color: #00fff0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.hero-text span {
+  color: #ff2e63;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #9ca3af;
+}
+
+.hero-image img {
+  max-height: 80vh;
+  border-radius: 16px;
+  box-shadow: 0 0 60px rgba(0,255,240,0.15);
+}
