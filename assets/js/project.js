@@ -25,7 +25,7 @@ const projects = [
   },
   {
     title: "Ludo Rally (2024)",
-    video: "https://youtu.be/nrebb6pxPrk?si=dYgYM9ix8jtSChAL",
+    video: "https://youtube.com/shorts/gdsr-vdW_4M",
     tags: ["Unity", "AI Bots", "Turn System", "UI"],
     desc: "Turn-based Ludo game with offline AI and multiple game modes.",
     bullets: [
