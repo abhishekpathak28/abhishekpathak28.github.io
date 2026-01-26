@@ -13,7 +13,7 @@ const projects = [
   },
   {
     title: "HyperRally 3D (2024)",
-    video: "https://www.youtube.com/embed/VOLKJJvfAbg",
+    video: "",
     tags: ["Unity", "Racing", "Cinemachine", "Camera"],
     desc: "Arcade racing game with collectible-based scoring and smooth camera transitions.",
     bullets: [
@@ -37,7 +37,7 @@ const projects = [
   },
   {
     title: "Zombie Killer (2025 | UE5)",
-    video: "https://youtu.be/-YlmnPh-6rE?si=Ivd1yFYswXHWZ82i",
+    video: "https://youtu.be/fnmgU9GMuAs?si=4cPDbXXjIzSjbl3t",
     tags: ["Unreal Engine 5", "FPS", "AI", "Spawning"],
     desc: "First-person zombie shooter with wave-based spawning and progressive difficulty.",
     bullets: [
