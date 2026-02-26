@@ -1,0 +1,218 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Deep space dark theme */
+    --background: 230 25% 3%;
+    --foreground: 180 100% 95%;
+
+    --card: 230 30% 8%;
+    --card-foreground: 180 100% 95%;
+
+    --popover: 230 30% 6%;
+    --popover-foreground: 180 100% 95%;
+
+    /* Neon Cyan Primary */
+    --primary: 180 100% 50%;
+    --primary-foreground: 230 25% 3%;
+
+    /* Magenta Accent */
+    --secondary: 300 100% 50%;
+    --secondary-foreground: 230 25% 3%;
+
+    /* Muted space tones */
+    --muted: 230 20% 15%;
+    --muted-foreground: 220 15% 55%;
+
+    --accent: 280 80% 60%;
+    --accent-foreground: 180 100% 95%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 230 30% 20%;
+    --input: 230 30% 15%;
+    --ring: 180 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom sci-fi tokens */
+    --neon-cyan: 180 100% 50%;
+    --neon-magenta: 300 100% 50%;
+    --neon-purple: 280 80% 60%;
+    --space-dark: 230 25% 3%;
+    --space-mid: 230 30% 8%;
+    --glass: 230 30% 12%;
+    --glow-cyan: 0 0 20px hsl(180 100% 50% / 0.5), 0 0 40px hsl(180 100% 50% / 0.3);
+    --glow-magenta: 0 0 20px hsl(300 100% 50% / 0.5), 0 0 40px hsl(300 100% 50% / 0.3);
+    --gradient-cyber: linear-gradient(135deg, hsl(180 100% 50% / 0.2), hsl(300 100% 50% / 0.2));
+    --gradient-glass: linear-gradient(135deg, hsl(230 30% 15% / 0.8), hsl(230 30% 8% / 0.6));
+
+    --sidebar-background: 230 25% 5%;
+    --sidebar-foreground: 180 100% 95%;
+    --sidebar-primary: 180 100% 50%;
+    --sidebar-primary-foreground: 230 25% 3%;
+    --sidebar-accent: 300 100% 50%;
+    --sidebar-accent-foreground: 180 100% 95%;
+    --sidebar-border: 230 30% 20%;
+    --sidebar-ring: 180 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-glass/60 backdrop-blur-xl border border-primary/20 rounded-lg;
+    box-shadow: 
+      inset 0 1px 0 0 hsl(180 100% 50% / 0.1),
+      0 0 30px hsl(180 100% 50% / 0.1);
+  }
+
+  .neon-text-cyan {
+    text-shadow: 
+      0 0 10px hsl(180 100% 50% / 0.8),
+      0 0 20px hsl(180 100% 50% / 0.6),
+      0 0 40px hsl(180 100% 50% / 0.4);
+  }
+
+  .neon-text-magenta {
+    text-shadow: 
+      0 0 10px hsl(300 100% 50% / 0.8),
+      0 0 20px hsl(300 100% 50% / 0.6),
+      0 0 40px hsl(300 100% 50% / 0.4);
+  }
+
+  .glow-border-cyan {
+    box-shadow: 
+      0 0 10px hsl(180 100% 50% / 0.5),
+      0 0 20px hsl(180 100% 50% / 0.3),
+      inset 0 0 10px hsl(180 100% 50% / 0.1);
+  }
+
+  .glow-border-magenta {
+    box-shadow: 
+      0 0 10px hsl(300 100% 50% / 0.5),
+      0 0 20px hsl(300 100% 50% / 0.3),
+      inset 0 0 10px hsl(300 100% 50% / 0.1);
+  }
+
+  .hologram-effect {
+    background: linear-gradient(
+      135deg,
+      hsl(180 100% 50% / 0.1) 0%,
+      transparent 50%,
+      hsl(300 100% 50% / 0.1) 100%
+    );
+  }
+
+  .cyber-button {
+    @apply relative overflow-hidden px-6 py-3 font-display font-semibold uppercase tracking-wider;
+    @apply border border-primary/50 bg-primary/10 text-primary;
+    @apply transition-all duration-300;
+    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+  }
+
+  .cyber-button:hover {
+    @apply bg-primary/20 border-primary;
+    box-shadow: 
+      0 0 20px hsl(180 100% 50% / 0.5),
+      inset 0 0 20px hsl(180 100% 50% / 0.1);
+  }
+
+  .cyber-button-magenta {
+    @apply border-secondary/50 bg-secondary/10 text-secondary;
+  }
+
+  .cyber-button-magenta:hover {
+    @apply bg-secondary/20 border-secondary;
+    box-shadow: 
+      0 0 20px hsl(300 100% 50% / 0.5),
+      inset 0 0 20px hsl(300 100% 50% / 0.1);
+  }
+
+  .hexagon-node {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+
+  .scanline {
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      hsl(180 100% 50% / 0.03) 2px,
+      hsl(180 100% 50% / 0.03) 4px
+    );
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  .font-body {
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  .text-glow-sm {
+    text-shadow: 0 0 10px currentColor;
+  }
+
+  .text-glow-md {
+    text-shadow: 0 0 10px currentColor, 0 0 20px currentColor;
+  }
+
+  .text-glow-lg {
+    text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 40px currentColor;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-energy-flow {
+    animation: energy-flow 2s linear infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(1deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; filter: brightness(1); }
+  50% { opacity: 1; filter: brightness(1.3); }
+}
+
+@keyframes energy-flow {
+  0% { stroke-dashoffset: 20; }
+  100% { stroke-dashoffset: 0; }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
