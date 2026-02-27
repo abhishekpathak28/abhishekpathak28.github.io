@@ -1,73 +1,132 @@
-# Welcome to your Lovable project
+🚀 Abhishek Pathak
+Unity Game Developer | Gameplay Systems | India
 
-## Project info
+Passionate Unity Game Developer with professional experience building shipped and in-production games.
+Focused on gameplay systems, clean architecture, and scalable project structure.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+I specialize in writing maintainable C# systems, designing reusable gameplay frameworks, and building performant mobile & PC experiences.
 
-## How can I edit this code?
+🎮 Featured Projects
+🃏 Cardash 3D
 
-There are several ways of editing your application.
+Available on Play Store (Company Project)
 
-**Use Lovable**
+A fast-paced card-based gameplay experience built for mobile platforms.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+My Contributions:
 
-Changes made via Lovable will be committed automatically to this repo.
+Gameplay logic implementation
 
-**Use your preferred IDE**
+UI systems using Unity UI
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+ScriptableObject-based configuration
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Optimization for mobile performance
 
-Follow these steps:
+Modular prefab-driven architecture
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+🧟 Zombie Killer
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+PC Game | Personal Project
+Available on Itch & GitHub (Download + Gameplay Video)
 
-# Step 3: Install the necessary dependencies.
-npm i
+A survival shooter prototype focused on combat mechanics and level flow.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Highlights:
 
-**Edit a file directly in GitHub**
+Complete gameplay loop implementation
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Prefab-based level spawning system
 
-**Use GitHub Codespaces**
+Enemy AI behavior scripting
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Clean OOP-driven architecture
 
-## What technologies are used for this project?
+Performance optimizations
 
-This project is built with:
+Project structured for scalability
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+🎲 LudoRally
 
-## How can I deploy this project?
+Company Project | Gameplay Video Available
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Multiplayer-focused board-style gameplay system.
 
-## Can I connect a custom domain to my Lovable project?
+My Work Involved:
 
-Yes, you can!
+Core gameplay logic
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+System structuring using ScriptableObjects
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+UI interaction handling
+
+Reusable component design
+
+🛠 Technical Skills
+🎯 Core
+
+C#
+
+Object-Oriented Programming
+
+Gameplay System Design
+
+Unity Architecture Patterns
+
+🧩 Unity Expertise
+
+Addressables
+
+ScriptableObjects
+
+Prefab-based level systems
+
+Unity UI
+
+Scene management
+
+Performance optimization
+
+🧠 Programming Concepts
+
+Clean code principles
+
+Modular system design
+
+Data-driven design patterns
+
+Event-based architecture
+
+🎨 Additional Tools
+
+Blender (Intermediate – Modeling & asset workflow)
+
+Unreal Engine (Working knowledge)
+
+📈 What I Focus On
+
+Writing scalable gameplay systems
+
+Improving performance in mobile projects
+
+Clean architecture for production-ready projects
+
+Building reusable modular systems
+
+Strengthening algorithms & logic depth
+
+🎯 Career Objective
+
+Looking to contribute to a mid-sized studio where I can:
+
+Build production-level gameplay systems
+
+Collaborate with cross-functional teams
+
+Grow into a strong systems/gameplay engineer
+
+Deliver polished, optimized game experiences
+
+🌍 Location
+
+India
